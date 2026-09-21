@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelForge</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#home">
+                <div class="logo">PIXELFORGE</div>
+                <div class="tagline">AI Image Studio</div>
+            </a>
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav mx-auto">
+
+                     <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+
+                </ul>
+
+                <a href="#pricing" class="get-started">
+                    Get Started
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home" class="section home  container">
+       
+ <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+
+    <main class="hero">
+
+
+        <!-- ======================================
+             LEFT CONTENT
+        ======================================= -->
+
+        <section class="hero-content">
+
+
+            <!-- TOP BADGE -->
+
+            <div class="badge">
+
+                <span></span>
+
+                Now with FLUX & SDXL Models
+
+            </div>
+
+
+            <!-- HEADING -->
+
+            <h1 class="hoo">
+
+                TURN WORDS
+
+                <span>
+                    INTO ART
+                </span>
+
+                <small>
+                    IN SECONDS
+                </small>
+
+            </h1>
+
+
+            <!-- DESCRIPTION -->
+
+            <p>
+
+                Generate stunning, high-resolution images
+                from simple text prompts. No design skills
+                needed — just describe what you imagine.
+
+            </p>
+
+
+            <!-- LINE -->
+
+            <div class="line"></div>
+
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+                <div>
+
+                    <strong>
+                        50M+
+                    </strong>
+
+                    <small>
+                        IMAGES
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        2.5S
+                    </strong>
+
+                    <small>
+                        GENERATION
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        4K
+                    </strong>
+
+                    <small>
+                        RESOLUTION
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             RIGHT GENERATOR
+        ======================================= -->
+
+        <section class="generator">
+
+
+            <!-- 10X FASTER -->
+
+            <div class="speed-badge">
+
+                10x Faster
+
+            </div>
+
+
+
+            <!-- GENERATOR WINDOW -->
+
+            <div class="window">
+
+
+                <!-- BROWSER DOTS -->
+
+                <div class="dots">
+
+                    <span class="red"></span>
+
+                    <span class="yellow"></span>
+
+                    <span class="green"></span>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     PROMPT
+                =================================== -->
+
+                <div class="prompt-box">
+
+                    <label for="prompt">
+
+                        YOUR PROMPT
+
+                    </label>
+
+
+                    <textarea
+                        id="prompt"
+                        placeholder="A cyberpunk city at sunset, neon lights reflecting on wet streets, cinematic lighting..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     OPTIONS
+                =================================== -->
+
+                <div class="options">
+
+
+                    <!-- STYLE -->
+
+                    <div class="style">
+
+                        <label for="styleSelect">
+
+                            STYLE
+
+                        </label>
+
+
+                        <!-- SELECT WRAPPER -->
+
+                        <div class="select-wrapper">
+
+                            <select
+                                class="select-box"
+                                id="styleSelect"
+                            >
+
+                                <option value="Watercolor">
+                                    Watercolor
+                                </option>
+
+                                <option value="Realistic">
+                                    Realistic
+                                </option>
+
+                                <option value="Anime">
+                                    Anime
+                                </option>
+
+                                <option value="3D">
+                                    3D
+                                </option>
+
+                                <option value="Digital Art">
+                                    Digital Art
+                                </option>
+
+                                <option value="Oil Painting">
+                                    Oil Painting
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         ASPECT RATIO
+                    =================================== -->
+
+                    <div class="ratio">
+
+                        <label>
+
+                            ASPECT RATIO
+
+                        </label>
+
+
+                        <div class="ratios">
+
+
+                            <button
+                                type="button"
+                                class="ratio-btn active"
+                                data-ratio="1:1"
+                            >
+
+                                1:1
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="ratio-btn"
+                                data-ratio="16:9"
+                            >
+
+                                16:9
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="ratio-btn"
+                                data-ratio="9:16"
+                            >
+
+                                9:16
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     GENERATE BUTTON
+                =================================== -->
+
+                <button
+                    type="button"
+                    class="generate"
+                    id="generateBtn"
+                >
+
+                    GENERATE IMAGE — 1:1
+
+                </button>
+
+
+
+                <!-- ==================================
+                     IMAGE PREVIEW
+                =================================== -->
+
+                <div
+                    class="image-box ratio-square"
+                    id="imageBox"
+                >
+
+                    <img
+                        id="previewImage"
+                        src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80"
+                        alt="AI Generated Art"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- 100+ STYLES -->
+
+            <div class="styles-badge">
+
+                100+ Styles
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section id="gallery" class="section  container">
+         <div class="showcase-container">
+
+        <!-- =========================
+             HEADING
+        ========================= -->
+
+        <h1 class="main-title">
+            COMMUNITY <span>SHOWCASE</span>
+        </h1>
+
+        <p class="subtitle">
+            Explore what creators are building with PixelForge.
+            Hover to see the prompts.
+        </p>
+
+
+        <!-- =========================
+             FILTER BUTTONS
+        ========================= -->
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="portraits">
+                Portraits
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="landscapes">
+                Landscapes
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="abstract">
+                Abstract
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="anime">
+                Anime
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             GALLERY
+        ========================= -->
+
+        <div class="gallery" id="gallery">
+
+
+            <!-- BOX 1 -->
+
+            <div
+                class="gallery-box box-1"
+                data-category="landscapes">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-01.jpg"
+                    alt="Landscape"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Landscapes
+                    </span>
+
+                    <h3 class="box-title">
+                        Golden Hour
+                    </h3>
+
+                    <p class="box-prompt">
+                        Cinematic landscape with dramatic
+                        golden light and deep blue shadows.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 2 -->
+
+            <div
+                class="gallery-box box-2"
+                data-category="portraits">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-02.jpg"
+                    alt="portraits"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Abstract
+                    </span>
+
+                    <h3 class="box-title">
+                        Dream Space
+                    </h3>
+
+                    <p class="box-prompt">
+                        Soft pastel 3D shapes floating
+                        in an ethereal environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 3 -->
+
+            <div
+                class="gallery-box box-3"
+                data-category="abstract">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-03.jpg"
+                    alt="Car"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Landscapes
+                    </span>
+
+                    <h3 class="box-title">
+                        City Drive
+                    </h3>
+
+                    <p class="box-prompt">
+                        Classic car photography with
+                        cinematic urban atmosphere.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 4 -->
+
+            <div
+                class="gallery-box box-4"
+                data-category="anime">
+
+                <img
+                    src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=900&q=85"
+                    alt="Anime"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Anime
+                    </span>
+
+                    <h3 class="box-title">
+                        Neon Hero
+                    </h3>
+
+                    <p class="box-prompt">
+                        Anime character portrait with
+                        dramatic red cinematic lighting.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 5 -->
+
+            <div
+                class="gallery-box box-5"
+                data-category="landscapes">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-05.jpg"
+                    alt="landscapes"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Portraits
+                    </span>
+
+                    <h3 class="box-title">
+                        Modern Portrait
+                    </h3>
+
+                    <p class="box-prompt">
+                        Editorial portrait with soft
+                        studio lighting.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 6 -->
+
+            <div
+                class="gallery-box box-6"
+                data-category="portraits">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-06.jpg"
+                    alt="Abstract Art"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Abstract
+                    </span>
+
+                    <h3 class="box-title">
+                        Digital Flow
+                    </h3>
+
+                    <p class="box-prompt">
+                        Futuristic flowing shapes,
+                        gradients and glowing forms.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 7 -->
+
+            <div
+                class="gallery-box box-7"
+                data-category="abstract">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-07.jpg"
+                    alt="Woman abstract"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Portraits
+                    </span>
+
+                    <h3 class="box-title">
+                        Soft Focus
+                    </h3>
+
+                    <p class="box-prompt">
+                        Artistic portrait with
+                        dreamy cinematic tones.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOX 8 -->
+
+            <div
+                class="gallery-box box-8"
+                data-category="landscapes">
+
+                <img
+                    src="https://templatemo.com/templates/templatemo_617_pixel_forge/images/tm-pixel-forge-08.jpg"
+                    alt="Anime Character"
+                >
+
+                <div class="box-content">
+
+                    <span class="box-category">
+                        Anime
+                    </span>
+
+                    <h3 class="box-title">
+                        Anime World
+                    </h3>
+
+                    <p class="box-prompt">
+                        Vibrant anime-inspired scene
+                        with cinematic composition.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features" class="section container">
+        
+        <div class="heading">
+       <h1 class="main-title">
+            BUILT <span>DIFFERENT</span>
+        </h1>
+
+        <p class="subtitle">
+          Not just another AI tool. Here's what sets us apart.
+        </p>
+</div>
+       <div class="features-wrapper">
+
+       
+        <!-- =========================
+             LARGE CARD
+        ========================== -->
+
+        <div class="feature-card large-card">
+            <div class="fon"><i class="fa fa-bolt" style="font-size:40px"></i></div>
+            <span class="number">01</span>
+
+            <div class="icon">
+                <i class="bi bi-lightning-charge"></i>
+            </div>
+
+            <h4 class="card-title">
+                LIGHTNING FAST
+            </h4>
+
+            <p class="card-text">
+                Generate stunning images in under 3 seconds.
+                Our optimized infrastructure ensures you never
+                wait around for inspiration.
+                <br>
+                This is a free HTML CSS template from TemplateMo
+                website. You may download and use this for any
+                purpose.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="stat">
+                <span class="stat-number">2.5s</span>
+
+                <span class="stat-text">
+                    average generation time
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             RIGHT CARDS
+        ========================== -->
+
+        <div class="right-cards">
+
+            <!-- CARD 02 -->
+            <div class="feature-card small-card">
+<div class="fon"><i class="fa fa-table" style="font-size:40px"></i></div>
+                <span class="number">02</span>
+
+                <div class="icon">
+                    <i class="bi bi-grid-3x3"></i>
+                </div>
+
+                <h4 class="card-title">
+                    ANY ASPECT RATIO
+                </h4>
+
+                <p class="card-text">
+                    Square, portrait, landscape, or custom
+                    dimensions. Perfect for social media,
+                    print, or web projects.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 03 -->
+            <div class="feature-card small-card">
+<div class="fon"><i class="fa fa-stack-overflow" style="font-size:40px"></i></div>
+                <span class="number">03</span>
+
+                <div class="icon">
+                    <i class="bi bi-layers"></i>
+                </div>
+
+                <h4 class="card-title">
+                    MULTIPLE MODELS
+                </h4>
+
+                <p class="card-text">
+                    Access SDXL, Flux, and proprietary models.
+                    Each optimized for different styles and
+                    use cases.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 04 -->
+            <div class="feature-card small-card">
+<div class="fon"><i class="fa fa-gear" style="font-size:40px"></i></div>
+                <span class="number">04</span>
+
+                <div class="icon">
+                    <i class="bi bi-gear"></i>
+                </div>
+
+                <h4 class="card-title">
+                    ADVANCED CONTROLS
+                </h4>
+
+                <p class="card-text">
+                    Fine-tune with negative prompts, seed
+                    control, guidance scale, and more.
+                    Full creative control.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 05 -->
+            <div class="feature-card small-card">
+<div class="fon"><i class="fa fa-cubes" style="font-size:40px"></i></div>
+                <span class="number">05</span>
+
+                <div class="icon">
+                    <i class="bi bi-box"></i>
+                </div>
+
+                <h4 class="card-title">
+                    API ACCESS
+                </h4>
+
+                <p class="card-text">
+                    Integrate PixelForge into your apps with
+                    our developer-friendly REST API.
+                    Full documentation included.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="heading " style="margin-top: 100px; ">
+       <h1 class="main-title">
+            HOW IT <span>WORKS</span>
+        </h1>
+
+       
+</div>
+     <!--how it work section -->
+      <section class="steps-section" style="margin-top: -90px;">
+        
+        <div class="steps-container">
+
+            <!-- Step 1 -->
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-content">
+
+                    <h3>DESCRIBE YOUR VISION</h3>
+
+                    <p>
+                        Type a detailed description of the
+                        image you want to create. The more
+                        specific, the better.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-content">
+
+                    <h3>CHOOSE YOUR STYLE</h3>
+
+                    <p>
+                        Select from photorealistic, anime,
+                        digital art, oil painting, and many more
+                        artistic styles.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-content">
+
+                    <h3>GENERATE &amp; REFINE</h3>
+
+                    <p>
+                        Get your image in seconds. Iterate,
+                        upscale, or edit until it's exactly right.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    </section>
+
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+       <!-- =========================================
+         PRICING SECTION
+    ========================================= -->
+
+    <section class="pricing-section">
+
+
+        <h1 class="main-title">
+            SIMPLE <span>PRICING</span>
+        </h1>
+
+        <p class="subtitle">
+            Explore what creators are building with PixelForge.
+            Hover to see the prompts.
+        </p>
+
+        <!-- =========================================
+             MONTHLY / YEARLY
+        ========================================= -->
+
+        <div class="billing-wrapper">
+
+
+            <span
+                id="monthlyText"
+                class="billing-text active">
+
+                Monthly
+
+            </span>
+
+
+            <button
+                type="button"
+                id="billingToggle"
+                class="billing-toggle"
+                aria-label="Change billing period">
+
+                <span class="toggle-circle"></span>
+
+            </button>
+
+
+            <span
+                id="yearlyText"
+                class="billing-text">
+
+                Yearly
+
+            </span>
+
+
+            <span
+                id="saveBadge"
+                class="save-badge">
+
+                Save 35%
+
+            </span>
+
+
+        </div>
+
+
+
+        <!-- =========================================
+             PRICING CARDS
+        ========================================= -->
+
+        <div class="container pricing-container">
+
+            <div class="row g-4 pricing-row">
+
+
+                <!-- =================================
+                     STARTER
+                ================================= -->
+
+                <div class="col-lg-4 col-md-6 pricing-col">
+
+                    <div class="pricing-card">
+
+
+                        <h2 class="plan-name">
+                            STARTER
+                        </h2>
+
+
+                        <p class="plan-description">
+                            Perfect for trying things out
+                        </p>
+
+
+                        <div class="price-area">
+
+
+                            <div class="monthly-price">
+
+                                <span class="price">
+                                    FREE
+                                </span>
+
+                            </div>
+
+
+                            <!-- Free remains same in yearly -->
+
+                            <div class="yearly-price">
+
+                                <span class="price">
+                                    FREE
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <ul class="features">
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    50 images / month
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Standard resolution<br>
+                                    (1024px)
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Basic styles
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Community gallery<br>
+                                    access
+                                </span>
+
+                            </li>
+
+
+                        </ul>
+
+
+
+                        <button class="plan-button">
+
+                            Get Started
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     CREATOR
+                ================================= -->
+
+                <div class="col-lg-4 col-md-6 pricing-col">
+
+                    <div class="pricing-card popular-card">
+
+
+                        <!-- Most Popular -->
+
+                        <div class="popular-badge">
+
+                            MOST POPULAR
+
+                        </div>
+
+
+
+                        <h2 class="plan-name">
+                            CREATOR
+                        </h2>
+
+
+                        <p class="plan-description">
+                            For serious content creators
+                        </p>
+
+
+
+                        <div class="price-area">
+
+
+                            <!-- Monthly -->
+
+                            <div class="monthly-price">
+
+                                <span class="price">
+                                    $15
+                                </span>
+
+                                <span class="price-period">
+                                    / month
+                                </span>
+
+                            </div>
+
+
+                            <!-- Yearly -->
+
+                            <div class="yearly-price">
+
+                                <span class="price">
+                                    $10
+                                </span>
+
+                                <span class="price-period">
+                                    / month
+                                </span>
+
+
+                                <div class="annual-price">
+
+                                    <strong>
+                                        $120
+                                    </strong>
+
+                                    billed annually
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <ul class="features">
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    500 images / month
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    4K resolution upscaling
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    All styles &amp; models
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Negative prompts
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Priority generation
+                                </span>
+
+                            </li>
+
+
+                        </ul>
+
+
+
+                        <button class="plan-button creator-button">
+
+                            Start Free Trial
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     ENTERPRISE
+                ================================= -->
+
+                <div class="col-lg-4 col-md-6 pricing-col">
+
+                    <div class="pricing-card">
+
+
+                        <h2 class="plan-name">
+                            ENTERPRISE
+                        </h2>
+
+
+                        <p class="plan-description">
+                            For teams and businesses
+                        </p>
+
+
+
+                        <div class="price-area">
+
+
+                            <!-- Monthly -->
+
+                            <div class="monthly-price">
+
+                                <span class="price">
+                                    $84
+                                </span>
+
+                                <span class="price-period">
+                                    / month
+                                </span>
+
+                            </div>
+
+
+                            <!-- Yearly -->
+
+                            <div class="yearly-price">
+
+                                <span class="price">
+                                    $55
+                                </span>
+
+                                <span class="price-period">
+                                    / month
+                                </span>
+
+
+                                <div class="annual-price">
+
+                                    <strong>
+                                        $660
+                                    </strong>
+
+                                    billed annually
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <ul class="features">
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Unlimited images
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    API access
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Custom model training
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Dedicated support
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="check">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    Commercial license
+                                </span>
+
+                            </li>
+
+
+                        </ul>
+
+
+
+                        <button class="plan-button">
+
+                            Contact Sales
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+    
+
+        <div class="container faq-wrapper">
+
+          
+        <h1 class="main-title">
+            OUESTIONS &<span> ANSWERS</span>
+        </h1>
+
+
+            <!-- FAQ -->
+            <div class="faq-list pt-4">
+
+                <div class="accordion" id="faqAccordion">
+
+
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqOne"
+                                aria-expanded="false"
+                                aria-controls="faqOne"
+                            >
+
+                                What AI models power PixelForge?
+
+                                <span class="plus-icon"></span>
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqOne"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+                                PixelForge uses advanced AI image generation
+                                models to create high-quality and creative
+                                visuals quickly and efficiently.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqTwo"
+                                aria-expanded="false"
+                                aria-controls="faqTwo"
+                            >
+
+                                Can I use generated images commercially?
+
+                                <span class="plus-icon"></span>
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+                                Yes, generated images can be used for
+                                commercial projects according to the
+                                applicable PixelForge usage terms.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqThree"
+                                aria-expanded="false"
+                                aria-controls="faqThree"
+                            >
+
+                                How does the credit system work?
+
+                                <span class="plus-icon"></span>
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+                                Credits are used whenever you generate an
+                                image. Your available credits depend on
+                                the plan you choose.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqFour"
+                                aria-expanded="false"
+                                aria-controls="faqFour"
+                            >
+
+                                Is there an API for developers?
+
+                                <span class="plus-icon"></span>
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqFour"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+                                Developers can integrate image generation
+                                functionality into their applications
+                                through the available API.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqFive"
+                                aria-expanded="false"
+                                aria-controls="faqFive"
+                            >
+
+                                What's your refund policy?
+
+                                <span class="plus-icon"></span>
+
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqFive"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+                                Refund requests are handled according to
+                                the current refund and subscription policy.
+                                Please check the applicable terms before
+                                requesting a refund.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+<!--question ka nicha ka section-->
+
+  <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+
+    <section class="hero-section">
+
+        <div class="container hero-container">
+
+            <div class="row align-items-center">
+
+
+                <!-- ==================================
+                     LEFT SIDE
+                =================================== -->
+
+                <div class="col-lg-6">
+
+                    <div class="left-content">
+
+                        <div class="small-title">
+                            START CREATING TODAY
+                        </div>
+
+
+                        <h1 class="main-heading">
+
+                            <span class="heading-white">
+                                YOUR NEXT IMAGE
+                            </span>
+
+                            <span class="heading-gray">
+                                IS JUST A PROMPT AWAY
+                            </span>
+
+                        </h1>
+
+
+                        <p class="description">
+                            Join thousands of creators, marketers, and
+                            developers who use PixelForge to bring their
+                            ideas to life.
+                        </p>
+
+
+                        <div class="hero-buttons">
+
+                            <button class="hero-btn">
+                                Get Started Free
+                            </button>
+
+                            <button class="hero-btn pricing-btn">
+                                View Pricing
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ==================================
+                     RIGHT SIDE
+                =================================== -->
+
+                <div class="col-lg-6">
+
+                    <div class="generator-wrapper">
+
+                        <div class="generator-card">
+
+
+                            <!-- Prompt -->
+                            <div class="prompt-box">
+
+                                "A serene Japanese garden at dusk,
+                                ancient stone lanterns glowing softly,
+                                koi pond reflecting cherry blossoms,
+                                misty mountains in background"
+
+                            </div>
+
+
+                            <!-- Arrow -->
+                            <div class="down-arrow">
+                                ↓
+                            </div>
+
+
+                            <!-- Generated Image -->
+                            <img
+                                class="generated-image"
+                                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=85"
+                                alt="Japanese mountain landscape"
+                            >
+
+
+                            <!-- Divider -->
+                            <div class="card-divider"></div>
+
+
+                            <!-- Bottom -->
+                            <div class="generated-info">
+
+                                <div>
+                                    Generated in
+                                    <strong style="color: #fff;">2.3s</strong>
+                                </div>
+
+
+                                <div class="action-buttons">
+
+                                    <button
+                                        class="action-btn"
+                                        title="Download"
+                                    >
+                                        ↓
+                                    </button>
+
+                                    <button
+                                        class="action-btn"
+                                        title="Edit"
+                                    >
+                                        ↗
+                                    </button>
+
+                                    <button
+                                        class="action-btn"
+                                        title="Like"
+                                    >
+                                        ♡
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Creating Badge -->
+                            <div class="creating">
+
+                                <div class="avatars">
+
+                                    <div class="avatar">
+                                        A
+                                    </div>
+
+                                    <div class="avatar">
+                                        M
+                                    </div>
+
+                                    <div class="avatar">
+                                        J
+                                    </div>
+
+                                    <div class="avatar">
+                                        +
+                                    </div>
+
+                                </div>
+
+                                <span class="creating-number">
+                                    2,847
+                                </span>
+
+                                <span>
+                                    creating now
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    </section>
+    <hr>
+    <footer class="main-footer">
+
+    <div class="container">
+
+        <!-- TOP FOOTER -->
+        <div class="footer-top row g-5">
+
+            <!-- LEFT -->
+            <div class="col-lg-7 col-md-6">
+
+                 <div class="logo">PIXELFORGE</div>
+                <div class="tagline">AI Image Studio</div>
+
+              
+
+                <p class="footer-description">
+                    Transform your imagination into stunning<br class="d-none d-lg-block">
+                    visuals with the power of AI.
+                </p>
+
+                <!-- SOCIAL ICONS -->
+                <div class="social-icons">
+
+                    <a href="#" class="social-btn">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" class="social-btn">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a href="#" class="social-btn">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="social-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div class="col-lg-5 col-md-6">
+
+                <h3 class="newsletter-title">
+                    STAY UPDATED
+                </h3>
+
+                <p class="newsletter-text">
+                    Get the latest features and tips delivered to your inbox.
+                </p>
+
+                <form class="subscribe-form">
+
+                    <input
+                        type="email"
+                        class="email-input"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <button type="submit" class="subscribe-btn">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- DIVIDER -->
+        <div class="footer-line"></div>
+
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom row align-items-center">
+
+            <!-- COPYRIGHT -->
+            <div class="col-lg-7 col-md-6">
+
+                <p class="copyright">
+                    © 2026 PixelForge. All rights reserved.
+                    Design:
+                    <a href="#">TemplateMo</a>
+                </p>
+
+            </div>
+
+
+            <!-- LINKS -->
+            <div class="col-lg-5 col-md-6">
+
+                <div class="footer-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <a href="#">Terms of Service</a>
+
+                    <a href="#">Cookie Policy</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script>
+
+
+        /* ==========================================
+           ELEMENTS
+        =========================================== */
+
+        const ratioButtons =
+            document.querySelectorAll(".ratio-btn");
+
+
+        const generateBtn =
+            document.getElementById("generateBtn");
+
+
+        const imageBox =
+            document.getElementById("imageBox");
+
+
+        const previewImage =
+            document.getElementById("previewImage");
+
+
+        const promptInput =
+            document.getElementById("prompt");
+
+
+        const styleSelect =
+            document.getElementById("styleSelect");
+
+
+
+        /* CURRENT RATIO */
+
+        let selectedRatio = "1:1";
+
+
+
+        /* ==========================================
+           IMAGES FOR EACH RATIO
+        =========================================== */
+
+        const ratioImages = {
+
+            "1:1":
+                "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80",
+
+            "16:9":
+                "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+
+            "9:16":
+                "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
+
+        };
+
+
+
+        /* ==========================================
+           RATIO BUTTON CLICK
+        =========================================== */
+
+        ratioButtons.forEach(function(button) {
+
+
+            button.addEventListener(
+                "click",
+                function() {
+
+
+                    /* REMOVE ACTIVE */
+
+                    ratioButtons.forEach(
+                        function(btn) {
+
+                            btn.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+
+                    /* ADD ACTIVE */
+
+                    this.classList.add(
+                        "active"
+                    );
+
+
+
+                    /* GET RATIO */
+
+                    selectedRatio =
+                        this.dataset.ratio;
+
+
+
+                    /* CHANGE BUTTON TEXT */
+
+                    generateBtn.textContent =
+                        "GENERATE IMAGE — " +
+                        selectedRatio;
+
+
+
+                    /* REMOVE OLD RATIO */
+
+                    imageBox.classList.remove(
+
+                        "ratio-square",
+
+                        "ratio-landscape",
+
+                        "ratio-portrait"
+
+                    );
+
+
+
+                    /* =================================
+                       CHANGE IMAGE
+                    ================================= */
+
+                    previewImage.style.opacity = "0";
+
+
+
+                    setTimeout(
+                        function() {
+
+                            previewImage.src =
+                                ratioImages[
+                                    selectedRatio
+                                ];
+
+                            previewImage.style.opacity =
+                                "1";
+
+                        },
+                        150
+                    );
+
+
+
+                    /* =================================
+                       CHANGE IMAGE BOX SIZE
+                    ================================= */
+
+                    if (
+                        selectedRatio === "1:1"
+                    ) {
+
+                        imageBox.classList.add(
+                            "ratio-square"
+                        );
+
+                    }
+
+
+                    else if (
+                        selectedRatio === "16:9"
+                    ) {
+
+                        imageBox.classList.add(
+                            "ratio-landscape"
+                        );
+
+                    }
+
+
+                    else if (
+                        selectedRatio === "9:16"
+                    ) {
+
+                        imageBox.classList.add(
+                            "ratio-portrait"
+                        );
+
+                    }
+
+
+                }
+            );
+
+        });
+
+
+
+        /* ==========================================
+           GENERATE BUTTON
+        =========================================== */
+
+        generateBtn.addEventListener(
+            "click",
+            function() {
+
+
+                /* GET PROMPT */
+
+                const prompt =
+                    promptInput.value.trim();
+
+
+                /* GET STYLE */
+
+                const style =
+                    styleSelect.value;
+
+
+
+                /* EMPTY PROMPT */
+
+                if (prompt === "") {
+
+                    alert(
+                        "Please enter your image prompt."
+                    );
+
+                    promptInput.focus();
+
+                    return;
+
+                }
+
+
+
+                /* LOADING */
+
+                generateBtn.disabled = true;
+
+                generateBtn.textContent =
+                    "GENERATING...";
+
+
+
+                /* DEMO DELAY */
+
+                setTimeout(
+                    function() {
+
+
+                        generateBtn.disabled =
+                            false;
+
+
+                        generateBtn.textContent =
+                            "GENERATE IMAGE — " +
+                            selectedRatio;
+
+
+
+                        console.log(
+                            "Prompt:",
+                            prompt
+                        );
+
+
+                        console.log(
+                            "Style:",
+                            style
+                        );
+
+
+                        console.log(
+                            "Ratio:",
+                            selectedRatio
+                        );
+
+
+                    },
+                    1500
+                );
+
+            }
+        );
+
+/*sectio2*/
+
+        const buttons =
+        document.querySelectorAll(".filter-btn");
+
+    const boxes =
+        document.querySelectorAll(".gallery-box");
+
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            /* Remove active */
+            buttons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            /* Add active */
+            button.classList.add("active");
+
+
+            const filter =
+                button.getAttribute("data-filter");
+
+
+            boxes.forEach((box, index) => {
+
+                const category =
+                    box.getAttribute("data-category");
+
+
+                if (
+                    filter === "all" ||
+                    category === filter
+                ) {
+
+                    box.classList.remove("hide");
+
+                    /*
+                        Reset animation
+                    */
+
+                    box.style.animation = "none";
+
+                    void box.offsetWidth;
+
+                    box.style.animation =
+                        `boxShow 0.6s ease ${index * 0.08}s forwards`;
+
+                }
+
+                else {
+
+                    box.classList.add("hide");
+
+                }
+
+            });
+
+        });
+
+    });
+
+
+    /* =========================
+       INITIAL BOX ANIMATION
+    ========================= */
+
+    window.addEventListener("load", () => {
+
+        boxes.forEach((box, index) => {
+
+            box.style.animationDelay =
+                `${index * 0.08}s`;
+
+        });
+
+    });
+
+    </script>
+
+<!--pricing section-->
+     <script>
+
+
+        const billingToggle =
+            document.getElementById("billingToggle");
+
+
+        const monthlyText =
+            document.getElementById("monthlyText");
+
+
+        const yearlyText =
+            document.getElementById("yearlyText");
+
+
+        const saveBadge =
+            document.getElementById("saveBadge");
+
+
+
+        /* =========================================
+           SHOW YEARLY
+        ========================================= */
+
+        function showYearly() {
+
+
+            billingToggle.classList.add("yearly");
+
+
+            monthlyText.classList.remove("active");
+
+
+            yearlyText.classList.add("active");
+
+
+            saveBadge.classList.add("active");
+
+
+            document.body.classList.add("yearly-mode");
+
+
+        }
+
+
+
+        /* =========================================
+           SHOW MONTHLY
+        ========================================= */
+
+        function showMonthly() {
+
+
+            billingToggle.classList.remove("yearly");
+
+
+            monthlyText.classList.add("active");
+
+
+            yearlyText.classList.remove("active");
+
+
+            saveBadge.classList.remove("active");
+
+
+            document.body.classList.remove("yearly-mode");
+
+
+        }
+
+
+
+        /* =========================================
+           TOGGLE CLICK
+        ========================================= */
+
+        billingToggle.addEventListener(
+            "click",
+            function () {
+
+
+                if (
+                    billingToggle.classList.contains("yearly")
+                ) {
+
+                    showMonthly();
+
+                }
+
+                else {
+
+                    showYearly();
+
+                }
+
+
+            }
+        );
+
+
+
+        /* =========================================
+           TEXT CLICK
+        ========================================= */
+
+        monthlyText.addEventListener(
+            "click",
+            showMonthly
+        );
+
+
+        yearlyText.addEventListener(
+            "click",
+            showYearly
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
